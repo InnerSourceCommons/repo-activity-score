@@ -20,4 +20,4 @@ These implementations are provided as reference implementations and with that fo
 
 ## License
 
-[MIT License](LICENSE). 
+[MIT](LICENSE) 
