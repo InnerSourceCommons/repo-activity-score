@@ -1,4 +1,4 @@
-name: Pylint
+name: checker
 
 on: [push]
 
@@ -14,10 +14,13 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
-    - name: Install dependencies
+    - name: install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pylint
-    - name: Analysing the code with pylint
+        make install
+    - name: flake8 lint
       run: |
-        pylint `ls -R|grep .py$|xargs`
+        make lint
+    - name: check code format
+      run: |
+        make check-format
