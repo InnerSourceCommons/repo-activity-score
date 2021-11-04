@@ -24,3 +24,6 @@ jobs:
     - name: check code format
       run: |
         make check-format
+    - name: check build
+      run: |
+        make build

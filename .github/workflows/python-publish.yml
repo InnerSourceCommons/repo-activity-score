@@ -19,6 +19,9 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         make install
+    - name: build
+      run: |
+        make build
     - name: publish to pypi
       uses: pypa/gh-action-pypi-publish@master
       with:

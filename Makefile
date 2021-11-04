@@ -21,3 +21,6 @@ install:
 
 check-format:
 	@black --check .
+
+build:
+	@python3 -m build
