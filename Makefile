@@ -14,10 +14,10 @@ help:
 	@echo "$$USAGE"
 
 lint:
-	@flake8 --ignore E501
+	@flake8 --ignore E501,W503,E203
 
 install:
 	@pip3 install -r requirements.txt
 
 check-format:
-	@black --check --diff .
+	@black --check .
