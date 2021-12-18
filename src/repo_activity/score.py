@@ -3,7 +3,7 @@ import math
 import functools
 
 
-def calculate_score(repo):
+def calculate(repo):
     # initial score is 50 to give active repos with low GitHub KPIs (forks, watchers, stars) a better starting point
     iScore = float(50)
 
